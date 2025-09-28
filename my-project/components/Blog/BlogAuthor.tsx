@@ -6,6 +6,6 @@ type BlogAuthorProps = BlogAuthorFragment
 
 export function BlogAuthor(props: BlogAuthorProps) {
   const { author, date } = props
-  if (!author) return null || 1
+  if (!author) return null
   return <NextBlogAuthor author={author} date={date} />
 }
